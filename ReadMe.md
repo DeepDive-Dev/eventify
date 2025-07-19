@@ -43,24 +43,14 @@ git clone https://github.com/sidsbgithub/eventify.git
 cd eventify
 
 2️⃣ Install Dependencies
-bash
 
-Collapse
-
-Wrap
-
-Copy
 npm install
 3️⃣ Set Up Environment Variables
 Create a .env.local file in the root directory and add the following variables:
 
 makefile
 
-Collapse
 
-Wrap
-
-Copy
 MONGODB_URI=
 
 NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
@@ -84,24 +74,10 @@ GEMINI_API_KEY=
 EMAIL_USER=
 EMAIL_PASS=
 4️⃣ Start the Development Server
-bash
-
-Collapse
-
-Wrap
-
-Copy
 npm run dev
 The app will be accessible at http://localhost:3000.
 
 📦 Code Structure
-bash
-
-Collapse
-
-Wrap
-
-Copy
 📦 event-management-student
 ├── 📂 components      # Reusable UI components
 ├── 📂 pages           # Application pages
