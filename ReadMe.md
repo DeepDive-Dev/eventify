@@ -129,7 +129,8 @@ npm install
 ```
 
 #### 3. Configure Environment
-Set up the necessary environment variables in a `.env.local` file.
+Create a file named `.env.local` in the **root directory** of the project. This file will store your sensitive API keys and environment-specific configurations.
+
 
 Follow the example below to populate your `.env.local`.
 
