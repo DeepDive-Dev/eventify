@@ -1,5 +1,6 @@
 import CheckoutButton from '@/components/shared/CheckoutButton';
 import Collection from '@/components/shared/Collection';
+import MapDisplay from '@/components/shared/MapDisplay'; // Import the new component
 import { getEventById, getRelatedEventsByCategory } from '@/lib/actions/event.actions'
 import { formatDateTime } from '@/lib/utils';
 import { SearchParamProps } from '@/types'
@@ -77,6 +78,14 @@ const EventDetails = async ({ params: { id }, searchParams }: SearchParamProps) 
           </div>
         </div>
       </div>
+    </section>
+
+    {/* EVENT LOCATION MAP */}
+    <section className="wrapper my-8 flex flex-col gap-8 md:gap-12">
+      <h2 className="h2-bold">Event Location</h2>
+        <div className="rounded-xl overflow-hidden">
+          <MapDisplay location={event.location} />
+        </div>
     </section>
 
     {/* EVENTS with the same category */}
